@@ -1,0 +1,15 @@
+.btn-hotpink{
+    padding: 0.5rem 1rem;
+    width: fit-content;
+    background: rgb(235,55,125);
+    background: -moz-linear-gradient(120deg, rgba(235,55,125,1) 52%, rgba(189,47,175,1) 100%);
+    background: -webkit-linear-gradient(120deg, rgba(235,55,125,1) 52%, rgba(189,47,175,1) 100%);
+    background: linear-gradient(120deg, rgba(235,55,125,1) 52%, rgba(189,47,175,1) 100%);
+    border-radius: 12px;
+    color: #fff;
+    font-family: 'Roboto','san-serif';
+}
+
+.btn-hotpink:hover{
+    cursor: pointer;
+}
