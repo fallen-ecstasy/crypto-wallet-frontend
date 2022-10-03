@@ -3,34 +3,33 @@ import './Login.css'
 
 
 
-export default function Login() {
-    function callSignUp(e){
-        e.classList.add('right-panel-active');
+export default function Login(props) {
+
+    function onSignUp() {
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
+
+        signUpButton.addEventListener('click', () =>
+            container.classList.add('right-panel-active'));
+
+        signInButton.addEventListener('click', () =>
+            container.classList.remove('right-panel-active'));
     }
-    // const signUpButton = ReactDOM.createRoot(document.getElementById('signUp'));
-    // const signInButton = ReactDOM.createRoot(document.getElementById('signIn'));
-    // const container = ReactDOM.createRoot(document.getElementById('container'));
-
-    // signUpButton.render(addEventListener('click', () =>
-    // container.classList.add('right-panel-active')));
-
-    // signInButton.render(addEventListener('click', () =>
-    // container.classList.remove('right-panel-active')));
-    return (  
+    return (
         <>
             <div className="container" id="container">
                 <div className="form-container sign-up-container">
                     <form action="/">
                         <h1>Create Account</h1>
                         <div className="social-container">
-                            <a href="/" className="social"><i className="fab fa-facebook-f"></i></a>
-                            <a href="/" className="social"><i className="fab fa-google-plus-g"></i></a>
-                            <a href="/" className="social"><i className="fab fa-linkedin-in"></i></a>
+                            <a href="/" className="social"><i className="fab fa-ethereum"></i></a>
+                            <a href="/" className="social"><i className="fab fa-google"></i></a>
                         </div>
                         <span>or use your email for registration</span>
-                        <input type="text" placeholder="Name" />
-                        <input type="email" placeholder="Email" />
-                        <input type="password" placeholder="Password" />
+                        <input type="text" placeholder="Name" name="userName"/>
+                        <input type="email" placeholder="Email" name="email"/>
+                        <input type="password" placeholder="Password" name="password" />
                         <button>Sign Up</button>
                     </form>
                 </div>
@@ -38,13 +37,12 @@ export default function Login() {
                     <form action="/">
                         <h1>Sign in</h1>
                         <div className="social-container">
-                            <a href="/" className="social"><i className="fab fa-facebook-f"></i></a>
-                            <a href="/" className="social"><i className="fab fa-google-plus-g"></i></a>
-                            <a href="/" className="social"><i className="fab fa-linkedin-in"></i></a>
+                            <a href="/" className="social"><i className="fab fa-ethereum"></i></a>
+                            <a href="/" className="social"><i className="fab fa-google"></i></a>
                         </div>
                         <span>or use your account</span>
-                        <input type="email" placeholder="Email" />
-                        <input type="password" placeholder="Password" />
+                        <input type="email" placeholder="Email" name="email"/>
+                        <input type="password" placeholder="Password" name="password"/>
                         <a href="/">Forgot your password?</a>
                         <button>Sign In</button>
                     </form>
@@ -59,11 +57,11 @@ export default function Login() {
                         <div className="overlay-panel overlay-right">
                             <h1>Hello, Friend!</h1>
                             <p>Enter your personal details and start journey with us</p>
-                            <button className="ghost" id="signUp" onClick={callSignUp}>Sign Up</button>
+                            <button className="ghost" id="signUp" onClick={onSignUp}>Sign Up</button>
                         </div>
                     </div>
                 </div>
-            </div>  
+            </div>
         </>
     )
 };

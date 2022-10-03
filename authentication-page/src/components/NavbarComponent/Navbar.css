@@ -1,5 +1,5 @@
-.navbar-custom{
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,34,253,1) 50%, rgba(252,176,69,1) 100%);
+.navbar-cus{
+    background: linear-gradient(90deg, rgba(18,9,56,1) 0%, rgba(58,37,180,1) 100%, rgba(252,176,69,1) 100%);
     font-weight: bold;
 }
 
