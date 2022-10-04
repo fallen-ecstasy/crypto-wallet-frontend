@@ -1,6 +1,5 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import Navbar from './components/NavbarComponent/Navbar'
 import Login from './components/LoginComponent/Login'
 
 function App() {

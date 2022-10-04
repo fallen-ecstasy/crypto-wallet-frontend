@@ -1,1 +1,1 @@
-# crypto-wallet-backend-auth
+# crypto-wallet-frontend-auth
