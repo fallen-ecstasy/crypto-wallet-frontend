@@ -19,13 +19,16 @@ function Wallet() {
             <div className='heading'>
                 Pay Friends
             </div>
-            <div className='content'>
+            <div className='content-outer'>
+            {/* <div className='content-inner'> */}
+
             <div className='add-btn wallet__sec2__child'>A</div>
-            <img src={Avatar} alt="" className='wallet__sec2__child'></img>
-            <img src={Avatar} alt="" className='wallet__sec2__child'></img>
-            <img src={Avatar} alt="" className='wallet__sec2__child'></img>
-            <img src={Avatar} alt="" className='wallet__sec2__child'></img>
-            <img src={Avatar} alt="" className='wallet__sec2__child'></img>
+            <img src={Avatar} alt="" className='wallet__sec2__child' />
+            <img src={Avatar} alt="" className='wallet__sec2__child' />
+            <img src={Avatar} alt="" className='wallet__sec2__child' />
+            <img src={Avatar} alt="" className='wallet__sec2__child' />
+            <img src={Avatar} alt="" className='wallet__sec2__child' />
+            {/* </div> */}
             </div>
         </div>
         <div className='wallet__sec3'></div>

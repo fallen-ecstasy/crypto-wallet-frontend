@@ -2,7 +2,6 @@
     background-color: #110733;
     height: 100vh;
     width: 100vw;
-    max-width: 100%;
     overflow-y: hidden;
     display: flex;
     align-items: center;
@@ -51,8 +50,17 @@
 .wallet__sec2{
     display: flex;
     flex-direction: column;
-    padding: 1rem 2rem;
+    padding: 1rem 0rem;
     overflow: hidden;
+}
+
+.content-outer > .add-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2.25rem;
+    border-radius: 3.5rem;
+    background-color: rgba(255,255,255,0.1);
 }
 
 .wallet__sec2 > .heading{
@@ -61,13 +69,18 @@
     font-size: 1.5rem;
 }
 
-.wallet__sec2 > .content{
+.wallet__sec2 > .content-outer{
+    height: 7rem;
+    overflow-x: scroll;
+    width: 100vw;
+    overflow-y: hidden;
+    white-space: nowrap;
     display: flex;
     flex-direction: row;
-    height: 5rem;
-    overflow: scroll;
+    align-items: center;
 }
 
-.wallet__sec2 > .content > .wallet__sec2__child{
-    margin:0rem 0.5rem;
+.content-outer > .wallet__sec2__child{
+    margin: 0rem 0.6rem;
+    display: inline;
 }
