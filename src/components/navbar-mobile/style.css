@@ -1,0 +1,25 @@
+.Mobile-nav{
+    background-color: #2B1647;
+    bottom: 0;
+    margin-bottom: -5%;
+    position: fixed;
+    height: 15%;
+    width: 100%;
+    border-radius: 12%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.Mobile-nav__btn{
+    margin-top: 1rem;
+    color : #fff;
+    height: fit-content;
+    padding: 1.2rem 1.5rem;
+    border-radius: 5rem;
+}
+
+.active__nav-btn{
+    color: aqua;
+    box-shadow: 0 0 45px 18px rgba(0,0,0,0.4);
+}

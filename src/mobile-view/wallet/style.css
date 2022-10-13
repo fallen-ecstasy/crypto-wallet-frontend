@@ -1,0 +1,73 @@
+.wallet{
+    background-color: #110733;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wallet__sec1{
+    background-color: rgba(255,255,255,0.1);
+    width: 80vw;
+    height: 5rem;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wallet__sec1__left > .avatar__circle{
+    background-color: aliceblue;
+    padding: 1.2rem 1rem;
+    border-radius: 4rem;
+    color: #4E8AFE;
+}
+
+.wallet__sec1__right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 1rem;
+}
+
+.wallet__sec1__right > .txt1{
+    color: #F9B4FF;
+    font-size: 0.9rem;
+}
+
+.wallet__sec1__right > .txt2{
+    color: #fff;
+    font-size: 1.75rem;
+    font-weight: 300;
+    font-family: 'Poppins','sans-serif';
+}
+
+.wallet__sec2{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    overflow: hidden;
+}
+
+.wallet__sec2 > .heading{
+    color: #fff;
+    font-family: 'Poppins','sans-serif';
+    font-size: 1.5rem;
+}
+
+.wallet__sec2 > .content{
+    display: flex;
+    flex-direction: row;
+    height: 5rem;
+    overflow: scroll;
+}
+
+.wallet__sec2 > .content > .wallet__sec2__child{
+    margin:0rem 0.5rem;
+}
