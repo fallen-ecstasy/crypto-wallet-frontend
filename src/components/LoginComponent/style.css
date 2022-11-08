@@ -5,12 +5,23 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(90deg, rgba(18,9,56,1) 0%, rgba(58,37,180,1) 100%, rgba(252,176,69,1) 100%);
+    background: linear-gradient(90deg, rgba(18, 9, 56, 1) 0%, rgba(58, 37, 180, 1) 100%, rgba(252, 176, 69, 1) 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+@media screen and (max-width:440px) {
+    body {
+        flex-direction: row;
+        font-family: 'Montserrat', sans-serif;
+        background: linear-gradient(90deg, rgba(18, 9, 56, 1) 0%, rgba(58, 37, 180, 1) 100%, rgba(252, 176, 69, 1) 100%);
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
 }
 
 h1 {
@@ -39,7 +50,7 @@ a {
 
 .container {
     background: #000;
-    color:#fff;
+    color: #fff;
     border-radius: 10px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, .2), 0 10px 10px rgba(0, 0, 0, .2);
     position: relative;
@@ -49,11 +60,19 @@ a {
     min-height: 480px;
 }
 
+@media screen and (max-width:440px) {
+    .container {
+        position: relative;
+        width: 100%;
+        min-height: 300px;
+    }
+}
+
 .form-container form {
     background: #000;
     display: flex;
     flex-direction: column;
-    padding:  0 50px;
+    padding: 0 20px;
     height: 100%;
     justify-content: center;
     align-items: center;
@@ -66,7 +85,7 @@ a {
 
 .social-container a {
     border: 1px solid #fff;
-    color:#fff;
+    color: #fff;
     border-radius: 50%;
     display: inline-flex;
     justify-content: center;
@@ -75,11 +94,13 @@ a {
     height: 40px;
     width: 40px;
 }
-.social-container a:hover{
+
+.social-container a:hover {
     color: #000;
     background-color: #fff;
 }
-input:active{
+
+input:active {
     background-color: #fff;
 }
 
@@ -103,7 +124,8 @@ button {
     text-transform: uppercase;
     transition: transform 80ms ease-in;
 }
-button:hover{
+
+button:hover {
     background-color: #fff;
     color: #000;
     border: #fff solid 1px;
@@ -121,9 +143,10 @@ button.ghost {
     background: transparent;
     color: #000;
 }
-button.ghost:hover{
+
+button.ghost:hover {
     background-color: #fff;
-    color:#000;
+    color: #000;
 }
 
 .form-container {
@@ -133,10 +156,49 @@ button.ghost:hover{
     transition: all .6s ease-in-out;
 }
 
+@media screen and (max-width:440px) {
+    .overlay-container {
+        visibility: hidden;
+    }
+
+    .form-container {
+        position: relative;
+        height: auto;
+    }
+
+    .form-container form {
+        background-color: #000;
+        padding: 0 50px;
+        height: 500px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
 .sign-in-container {
     left: 0;
     width: 50%;
     z-index: 2;
+}
+
+@media screen and (max-width:440px) {
+    .sign-in-container {
+        width: 300px;
+    }
+    .sign-up-container{
+        display: none ;
+    }
+    .sign-up-container-mobile{
+        left: 0;
+        width: 300px;
+        z-index: 1;
+        opacity: 0;
+    }
+    .sign-in-container-mobile{
+        display: none;
+    }
+
 }
 
 .sign-up-container {
@@ -144,6 +206,14 @@ button.ghost:hover{
     width: 50%;
     z-index: 1;
     opacity: 0;
+}
+.mobileSignUp{
+    display: none;
+}
+@media screen and (max-width:440px) {
+    .mobileSignUp{
+        display: block;
+    }
 }
 
 .overlay-container {
@@ -156,6 +226,8 @@ button.ghost:hover{
     transition: transform .6s ease-in-out;
     z-index: 100;
 }
+
+
 
 .overlay {
     background: #ff416c;
@@ -193,10 +265,12 @@ button.ghost:hover{
     transform: translateY(-20%);
     color: #fff;
 }
-.overlay-left button{
+
+.overlay-left button {
     color: #fff;
     border-color: #fff;
 }
+
 /* Move signin to right */
 .container.right-panel-active .sign-in-container {
     transform: translateY(100%);
@@ -229,17 +303,11 @@ button.ghost:hover{
     transform: translateY(20%);
 }
 
-.footer {
-	margin-top: 25px;
-	text-align: center;
-}
 
-
-.icons {
-	display: flex;
-	width: 30px;
-	height: 30px;
-	letter-spacing: 15px;
-	align-items: center;
-}
-
+/* .icons {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    letter-spacing: 15px;
+    align-items: center;
+} */
